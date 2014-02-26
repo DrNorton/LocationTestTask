@@ -1,5 +1,8 @@
 ﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="LocationTestTask.UI" EntryPointType="LocationTestTask.App" RuntimeVersion="4.7.50308.0">
   <Deployment.Parts>
     <AssemblyPart x:Name="LocationTestTask.UI" Source="LocationTestTask.UI.dll" />
+    <AssemblyPart x:Name="LocationTestTask.DataLayer" Source="LocationTestTask.DataLayer.dll" />
+    <AssemblyPart x:Name="Phone7.Fx" Source="Phone7.Fx.dll" />
+    <AssemblyPart x:Name="System.Windows.Interactivity" Source="System.Windows.Interactivity.dll" />
   </Deployment.Parts>
 </Deployment>

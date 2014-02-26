@@ -51,9 +51,20 @@
     <Reference Include="mscorlib.extensions" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LocationContext.cs" />
+    <Compile Include="Context\ILocationContext.cs" />
+    <Compile Include="DataEntities\IEntity.cs" />
+    <Compile Include="DataEntities\Location.cs" />
+    <Compile Include="DataEntities\MapPosition.cs" />
+    <Compile Include="Dto\IDto.cs" />
+    <Compile Include="Context\LocationContext.cs" />
+    <Compile Include="Dto\LocationDto.cs" />
+    <Compile Include="Dto\MapPositionDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\Base\BaseRepository.cs" />
+    <Compile Include="Repositories\ILocationRepository.cs" />
+    <Compile Include="Repositories\LocationRepository.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
   <ProjectExtensions />

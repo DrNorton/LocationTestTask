@@ -1,11 +1,11 @@
 ﻿using Microsoft.Phone.Controls;
 
-namespace LocationTestTask.UI
+namespace LocationTestTask.UI.Views
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class LocationView : PhoneApplicationPage
     {
         // Constructor
-        public MainPage()
+        public LocationView()
         {
             InitializeComponent();
         }
