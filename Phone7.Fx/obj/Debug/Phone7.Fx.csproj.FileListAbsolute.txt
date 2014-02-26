@@ -1,0 +1,80 @@
+C:\Users\ПРОГРАММИСТ-2\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\Phone7.Fx.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\Phone7.Fx.pdb
+C:\Users\ПРОГРАММИСТ-2\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\System.Windows.Interactivity.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\System.Windows.Interactivity.xml
+C:\Users\ПРОГРАММИСТ-2\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\GitHub\SmsManager\Phone7.Fx\obj\Debug\Controls\JumpList\JumpListBox.g.i.cs
+C:\Users\ПРОГРАММИСТ-2\Documents\GitHub\SmsManager\Phone7.Fx\obj\Debug\Controls\JumpList\JumpListSelector.g.i.cs
+C:\Users\ПРОГРАММИСТ-2\Documents\GitHub\SmsManager\Phone7.Fx\obj\Debug\Controls\LoadingImage\LoadingImage.g.i.cs
+C:\Users\ПРОГРАММИСТ-2\Documents\GitHub\SmsManager\Phone7.Fx\obj\Debug\Phone7.Fx.g.resources
+C:\Users\ПРОГРАММИСТ-2\Documents\GitHub\SmsManager\Phone7.Fx\obj\Debug\Phone7.Fx.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\GitHub\SmsManager\Phone7.Fx\obj\Debug\Phone7.Fx.pdb
+C:\Users\drnor_000\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\Phone7.Fx.dll
+C:\Users\drnor_000\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\Phone7.Fx.pdb
+C:\Users\drnor_000\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\System.Windows.Interactivity.dll
+C:\Users\drnor_000\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\System.Windows.Interactivity.xml
+C:\Users\drnor_000\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\drnor_000\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\drnor_000\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\drnor_000\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\drnor_000\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\drnor_000\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\drnor_000\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\drnor_000\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\drnor_000\Documents\GitHub\SmsManager\Phone7.Fx\Bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\drnor_000\Documents\GitHub\SmsManager\Phone7.Fx\obj\Debug\Phone7.Fx.csprojResolveAssemblyReference.cache
+C:\Users\drnor_000\Documents\GitHub\SmsManager\Phone7.Fx\obj\Debug\Controls\JumpList\JumpListBox.g.cs
+C:\Users\drnor_000\Documents\GitHub\SmsManager\Phone7.Fx\obj\Debug\Controls\JumpList\JumpListSelector.g.cs
+C:\Users\drnor_000\Documents\GitHub\SmsManager\Phone7.Fx\obj\Debug\Controls\LoadingImage\LoadingImage.g.cs
+C:\Users\drnor_000\Documents\GitHub\SmsManager\Phone7.Fx\obj\Debug\Phone7.Fx.g.resources
+C:\Users\drnor_000\Documents\GitHub\SmsManager\Phone7.Fx\obj\Debug\Phone7.Fx.dll
+C:\Users\drnor_000\Documents\GitHub\SmsManager\Phone7.Fx\obj\Debug\Phone7.Fx.pdb
+C:\Users\ПРОГРАММИСТ-2\Documents\GitHub\SmsManager\Phone7.Fx\obj\Debug\Phone7.Fx.csprojResolveAssemblyReference.cache
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\SmsManager\Phone7.Fx\Bin\Debug\Phone7.Fx.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\SmsManager\Phone7.Fx\Bin\Debug\Phone7.Fx.pdb
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\SmsManager\Phone7.Fx\Bin\Debug\System.Windows.Interactivity.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\SmsManager\Phone7.Fx\Bin\Debug\System.Windows.Interactivity.xml
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\SmsManager\Phone7.Fx\Bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\SmsManager\Phone7.Fx\Bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\SmsManager\Phone7.Fx\Bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\SmsManager\Phone7.Fx\Bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\SmsManager\Phone7.Fx\Bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\SmsManager\Phone7.Fx\Bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\SmsManager\Phone7.Fx\Bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\SmsManager\Phone7.Fx\Bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\SmsManager\Phone7.Fx\Bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\SmsManager\Phone7.Fx\obj\Debug\Phone7.Fx.csprojResolveAssemblyReference.cache
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\SmsManager\Phone7.Fx\obj\Debug\Controls\JumpList\JumpListBox.g.i.cs
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\SmsManager\Phone7.Fx\obj\Debug\Controls\JumpList\JumpListSelector.g.i.cs
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\SmsManager\Phone7.Fx\obj\Debug\Controls\LoadingImage\LoadingImage.g.i.cs
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\SmsManager\Phone7.Fx\obj\Debug\Phone7.Fx.g.resources
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\SmsManager\Phone7.Fx\obj\Debug\Phone7.Fx.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\SmsManager\Phone7.Fx\obj\Debug\Phone7.Fx.pdb
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\Phone7.Fx\Bin\Debug\Phone7.Fx.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\Phone7.Fx\Bin\Debug\Phone7.Fx.pdb
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\Phone7.Fx\Bin\Debug\System.Windows.Interactivity.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\Phone7.Fx\Bin\Debug\System.Windows.Interactivity.xml
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\Phone7.Fx\Bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\Phone7.Fx\Bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\Phone7.Fx\Bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\Phone7.Fx\Bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\Phone7.Fx\Bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\Phone7.Fx\Bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\Phone7.Fx\Bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\Phone7.Fx\Bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\Phone7.Fx\Bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\Phone7.Fx\obj\Debug\Phone7.Fx.csprojResolveAssemblyReference.cache
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\Phone7.Fx\obj\Debug\Controls\JumpList\JumpListBox.g.i.cs
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\Phone7.Fx\obj\Debug\Controls\JumpList\JumpListSelector.g.i.cs
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\Phone7.Fx\obj\Debug\Controls\LoadingImage\LoadingImage.g.i.cs
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\Phone7.Fx\obj\Debug\Phone7.Fx.g.resources
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\Phone7.Fx\obj\Debug\Phone7.Fx.dll
+C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\Phone7.Fx\obj\Debug\Phone7.Fx.pdb
