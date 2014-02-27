@@ -6,7 +6,6 @@ namespace LocationTestTask.DataLayer.Repositories
 {
     public interface ILocationRepository
     {
-        LocationDto Convert(Location entity);
         IEnumerable<LocationDto> GetAll();
         LocationDto GetItem(long id);
         void InsertOrUpdate(LocationDto dto);

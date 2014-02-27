@@ -40,10 +40,34 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Button Content="Старт" Grid.Column="0"/>
-            <Button Content="Стоп" Grid.Column="1"/>
+            <Button Command="{Binding StartGeoWatcherCommand}" Content="Старт" Grid.Column="0"/>
+            <Button Command="{Binding StopGeoWatcherCommand}" Content="Стоп" Grid.Column="1"/>
+            <Button Command="{Binding NavigateToMapCommand}" Content="На карту" Grid.Column="0" Grid.Row="1"/>
+            <ListBox Grid.Row="2"  Grid.ColumnSpan="2" ItemsSource="{Binding Locations,Mode=TwoWay}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0">
+                                <TextBlock  Text="{Binding LatitudeString}" Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock  Text="{Binding LongitudeString}" Style="{StaticResource PhoneTextNormalStyle}"/>
+                            </StackPanel>
+                            <TextBlock Grid.Column="1" Text="{Binding MeasurementDatetime,StringFormat=dd MM yyyy hh:mm}" Style="{StaticResource PhoneTextNormalStyle}"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem">
+                        <Setter Property="Padding" Value="10"/>
+                    </Style>
+                </ListBox.ItemContainerStyle>
+            </ListBox>
         </Grid>
     </Grid>
  

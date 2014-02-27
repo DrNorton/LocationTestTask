@@ -2,8 +2,6 @@
     x:Class="LocationTestTask.UI.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:ui="clr-namespace:LocationTestTask.UI">
 
     <!--Application Resources-->

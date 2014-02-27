@@ -20,6 +20,9 @@
     </Capabilities>
     <Tasks>
       <DefaultTask Name="_default" NavigationPage="Views/LocationView.xaml" />
+      <ExtendedTask Name="BackgroundTask">
+        <BackgroundServiceAgent Specifier="ScheduledTaskAgent" Name="BackgroundAgent" Source="LocationTestTask.GpsPositionSaverAgent" Type="LocationTestTask.GpsPositionSaverAgent.ScheduledAgent" />
+      </ExtendedTask>
     </Tasks>
     <Tokens>
       <PrimaryToken TokenID="LocationTestTaskToken" TaskName="_default">

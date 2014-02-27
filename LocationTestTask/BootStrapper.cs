@@ -12,21 +12,20 @@ namespace LocationTestTask.UI
 {
     public class BootStrapper : PhoneBootstrapper
     {
-        private readonly string _connectionString;
+        private const string ConnectionString = "Data Source=isostore:/db.sdf";
 
         public BootStrapper()
         {
            
-            _connectionString = "Data Source=isostore:/db.sdf";
-       
         }
-
+        
         protected override void Configure()
         {
-            var db = new LocationContext(_connectionString);
+            var db = new LocationContext(ConnectionString);
             var context = CreateDataBaseIfNeeded(db);
+            var locationRepository = new LocationRepository(context);
             Container.Current.RegisterInstance<ILocationContext>(context);
-            Container.Current.RegisterType<ILocationRepository, LocationRepository>();
+            Container.Current.RegisterInstance<ILocationRepository>(locationRepository);
         }
 
         private ILocationContext CreateDataBaseIfNeeded(ILocationContext db)

@@ -7,7 +7,7 @@ using Microsoft.Phone.Shell;
 
 namespace LocationTestTask.GpsPositionSaverAgent
 {
-    public class ScheduledGpsAgent : ScheduledTaskAgent
+    public class ScheduledAgent : ScheduledTaskAgent
     {
         private static volatile bool _classInitialized;
         public GeoCoordinateWatcher _geoCoordinateWatcher;
@@ -15,7 +15,7 @@ namespace LocationTestTask.GpsPositionSaverAgent
         /// <remarks>
         /// ScheduledAgent constructor, initializes the UnhandledException handler
         /// </remarks>
-        public ScheduledGpsAgent()
+        public ScheduledAgent()
         {
             if (!_classInitialized)
             {
@@ -41,18 +41,9 @@ namespace LocationTestTask.GpsPositionSaverAgent
       
         protected override void OnInvoke(ScheduledTask task)
         {
-            //TODO: Add code to perform your task in background
             _geoCoordinateWatcher = new GeoCoordinateWatcher(GeoPositionAccuracy.High);
-            _geoCoordinateWatcher.MovementThreshold = 100;
-            _geoCoordinateWatcher.PositionChanged += new System.EventHandler<GeoPositionChangedEventArgs<GeoCoordinate>>(_geoCoordinateWatcher_PositionChanged);
-            //TODO: добавьте код для выполнения задачи в фоновом режиме
+            var position=_geoCoordinateWatcher.Position;
             //Включим получатель координат
-            _geoCoordinateWatcher.Start();
-            NotifyComplete();
-        }
-
-        void _geoCoordinateWatcher_PositionChanged(object sender, GeoPositionChangedEventArgs<GeoCoordinate> e)
-        {
             UpdateTile();
             NotifyComplete();
         }
