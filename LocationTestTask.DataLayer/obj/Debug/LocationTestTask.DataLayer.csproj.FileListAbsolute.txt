@@ -1,8 +1,0 @@
-C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\LocationTestTask.DataLayer\Bin\Debug\LocationTestTask.DataLayer.dll
-C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\LocationTestTask.DataLayer\Bin\Debug\LocationTestTask.DataLayer.pdb
-C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\LocationTestTask.DataLayer\obj\Debug\LocationTestTask.DataLayer.dll
-C:\Users\ПРОГРАММИСТ-2\Documents\Visual Studio 2010\Projects\ПЕСОЧНИЦА\Мои проекты\WP\LocationTestTask\LocationTestTask.DataLayer\obj\Debug\LocationTestTask.DataLayer.pdb
-C:\Users\drnor_000\Documents\Visual Studio 2012\Projects\LocationTestTask\LocationTestTask.DataLayer\Bin\Debug\LocationTestTask.DataLayer.dll
-C:\Users\drnor_000\Documents\Visual Studio 2012\Projects\LocationTestTask\LocationTestTask.DataLayer\Bin\Debug\LocationTestTask.DataLayer.pdb
-C:\Users\drnor_000\Documents\Visual Studio 2012\Projects\LocationTestTask\LocationTestTask.DataLayer\obj\Debug\LocationTestTask.DataLayer.dll
-C:\Users\drnor_000\Documents\Visual Studio 2012\Projects\LocationTestTask\LocationTestTask.DataLayer\obj\Debug\LocationTestTask.DataLayer.pdb
