@@ -43,8 +43,8 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Button Command="{Binding StartGeoWatcherCommand,Mode=TwoWay}" Content="Старт" Grid.Column="0"/>
-            <Button Command="{Binding StopGeoWatcherCommand,Mode=TwoWay}" Content="Стоп" Grid.Column="1"/>
+            <Button Command="{Binding StartGeoWatcherCommand,Mode=TwoWay}" IsEnabled="{Binding StartButtonEnabled,Mode=TwoWay}" Content="Старт" Grid.Column="0"/>
+            <Button Command="{Binding StopGeoWatcherCommand,Mode=TwoWay}" IsEnabled="{Binding StopButtonEnabled,Mode=TwoWay}" Content="Стоп" Grid.Column="1"/>
             <Button Command="{Binding NavigateToMapCommand}" Content="На карту" Grid.Column="0" Grid.Row="1"/>
             <ListBox Grid.Row="2"  Grid.ColumnSpan="2" ItemsSource="{Binding Locations}" HorizontalAlignment="Stretch">
                 <ListBox.ItemTemplate>

@@ -16,13 +16,13 @@ namespace LocationTestTask.UI.ViewModels
     {
         private readonly INavigationService _navigationService;
         private readonly ILocationManager _locationManager;
+        private bool _startButtonEnabled;
+        private bool _stopButtonEnabled;
 
         public new DelegateCommand<object> StartGeoWatcherCommand { get; set; }
         public new DelegateCommand<object> StopGeoWatcherCommand { get; set; }
-
-        private DelegateCommand<object> _navigateToMapCommand;
         
-            
+        private DelegateCommand<object> _navigateToMapCommand;
             
         [Injection]
         public LocationViewModel(INavigationService navigationService,ILocationManager locationManager){
@@ -31,9 +31,9 @@ namespace LocationTestTask.UI.ViewModels
             _locationManager = locationManager;
             
             _locationManager.OnNewPositionReceived += new EventHandler<NewLocationEventArgs>(_locationManager_OnNewPositionReceived);
-            StopGeoWatcherCommand = new DelegateCommand<object>(StopGeoWatcher, (obj) => _locationManager.IsStarted);
-            StartGeoWatcherCommand = new DelegateCommand<object>(StartGeoWatcher, (obj) => !_locationManager.IsStarted);
-          
+            StopGeoWatcherCommand = new DelegateCommand<object>(StopGeoWatcher);
+            StartGeoWatcherCommand = new DelegateCommand<object>(StartGeoWatcher);
+            SetButtonEnabled(_locationManager.IsStarted);
         }
 
 
@@ -57,18 +57,29 @@ namespace LocationTestTask.UI.ViewModels
 
         private void StartGeoWatcher(object obj){
             _locationManager.StartGeoReceiver();
-            RaiseStartStopButtonCanExecute();
+            SetButtonEnabled(true);
         }
 
-        private void RaiseStartStopButtonCanExecute(){
-            StartGeoWatcherCommand.RaiseCanExecuteChanged();
-            StopGeoWatcherCommand.RaiseCanExecuteChanged();
-        }
-
-        private void StopGeoWatcher(object obj){
+        private void StopGeoWatcher(object obj)
+        {
             _locationManager.StopGeoReceiver();
-            RaiseStartStopButtonCanExecute();
+            SetButtonEnabled(false);
         }
+
+        private void SetButtonEnabled(bool isStart){
+            if (isStart)
+            {
+                StartButtonEnabled = false;
+                StopButtonEnabled = true;
+            }
+            else
+            {
+                StartButtonEnabled = true;
+                StopButtonEnabled = false;
+            }
+        }
+
+        
         private void NavigateToMap(object obj)
         {
             _navigationService.UriFor<MapViewModel>().Navigate();
@@ -77,6 +88,26 @@ namespace LocationTestTask.UI.ViewModels
         public ObservableCollection<LocationDto> Locations{
             get{
                 return new ObservableCollection<LocationDto>(_locationManager.Locations.OrderByDescending(x=>x.MeasurementDatetime));
+            }
+        }
+
+        public bool StartButtonEnabled
+        {
+            get { return _startButtonEnabled; }
+            set
+            {
+                _startButtonEnabled = value;
+                base.RaisePropertyChanged(()=>StartButtonEnabled);
+            }
+        }
+
+        public bool StopButtonEnabled
+        {
+            get { return _stopButtonEnabled; }
+            set
+            {
+                _stopButtonEnabled = value;
+                base.RaisePropertyChanged(() => StopButtonEnabled);
             }
         }
     }
