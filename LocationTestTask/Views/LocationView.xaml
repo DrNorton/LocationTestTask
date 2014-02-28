@@ -43,28 +43,34 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Button Command="{Binding StartGeoWatcherCommand}" Content="Старт" Grid.Column="0"/>
-            <Button Command="{Binding StopGeoWatcherCommand}" Content="Стоп" Grid.Column="1"/>
+            <Button Command="{Binding StartGeoWatcherCommand,Mode=TwoWay}" Content="Старт" Grid.Column="0"/>
+            <Button Command="{Binding StopGeoWatcherCommand,Mode=TwoWay}" Content="Стоп" Grid.Column="1"/>
             <Button Command="{Binding NavigateToMapCommand}" Content="На карту" Grid.Column="0" Grid.Row="1"/>
-            <ListBox Grid.Row="2"  Grid.ColumnSpan="2" ItemsSource="{Binding Locations,Mode=TwoWay}">
+            <ListBox Grid.Row="2"  Grid.ColumnSpan="2" ItemsSource="{Binding Locations}" HorizontalAlignment="Stretch">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition />
-                                <ColumnDefinition Width="Auto"/>
-                            </Grid.ColumnDefinitions>
-                            <StackPanel Grid.Column="0">
-                                <TextBlock  Text="{Binding LatitudeString}" Style="{StaticResource PhoneTextNormalStyle}"/>
-                                <TextBlock  Text="{Binding LongitudeString}" Style="{StaticResource PhoneTextNormalStyle}"/>
-                            </StackPanel>
-                            <TextBlock Grid.Column="1" Text="{Binding MeasurementDatetime,StringFormat=dd MM yyyy hh:mm}" Style="{StaticResource PhoneTextNormalStyle}"/>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Rectangle Fill="Red" Grid.RowSpan="3"/>
+                            <TextBlock Text="{Binding Path=LatitudeString}" HorizontalAlignment="Left" Style="{StaticResource PhoneTextNormalStyle}" />
+                            <TextBlock Text="{Binding LongitudeString}" HorizontalAlignment="Left"
+                             Style="{StaticResource PhoneTextNormalStyle}"
+                             Grid.Row="1"/>
+                            <TextBlock Text="{Binding MeasurementDatetime,StringFormat=dd.MM.yyyy HH:mm:ss}" HorizontalAlignment="Right"
+                             Style="{StaticResource PhoneTextSubtleStyle}"
+                             Grid.Row="2"/>
+
                         </Grid>
-                    </DataTemplate>
+                </DataTemplate>
                 </ListBox.ItemTemplate>
                 <ListBox.ItemContainerStyle>
                     <Style TargetType="ListBoxItem">
                         <Setter Property="Padding" Value="10"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
                     </Style>
                 </ListBox.ItemContainerStyle>
             </ListBox>

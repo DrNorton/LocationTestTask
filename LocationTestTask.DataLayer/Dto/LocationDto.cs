@@ -20,7 +20,6 @@ namespace LocationTestTask.DataLayer.Dto
                 return String.Format("Широта: {0}", MapPosition.Latitude);
             }
         }
-
         public string LongitudeString
         {
             get
@@ -31,5 +30,7 @@ namespace LocationTestTask.DataLayer.Dto
                 return String.Format("Долгота: {0}", MapPosition.Latitude);
             }
         }
+
+        
     }
 }

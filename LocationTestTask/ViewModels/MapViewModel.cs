@@ -12,10 +12,13 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
+using LocationTestTask.Core;
 using LocationTestTask.DataLayer.Dto;
 using LocationTestTask.DataLayer.Repositories;
 using LocationTestTask.UI.Views;
+using Microsoft.Phone.Controls.Maps;
 using Phone7.Fx.Commands;
+using Phone7.Fx.Extensions;
 using Phone7.Fx.Ioc;
 using Phone7.Fx.Mvvm;
 
@@ -24,41 +27,47 @@ namespace LocationTestTask.UI.ViewModels
      [ViewModel(typeof(MapView))]
     public class MapViewModel:ViewModelBase
     {
-         private readonly ILocationRepository _locationRepository;
+         private readonly ILocationManager _locationManager;
+         private readonly ApplicationIdCredentialsProvider _credentials;
+
          private int _zoomLevel=5;
          private DelegateCommand<object> _zoomInCommand;
          private DelegateCommand<object> _zoomOutCommand;
-         private ObservableCollection<GeoCoordinate> _userPositions;
-         private GeoCoordinate _mapCenter;
+         private DelegateCommand<LocationDto> _zoomSelectPinCommand;
+         private ObservableCollection<LocationDto> _userPositions;
+         private LocationDto _mapCenter;
+
              
              
          [Injection]
-         public MapViewModel(ILocationRepository locationRepository){
-             _locationRepository = locationRepository;
-             _userPositions=new ObservableCollection<GeoCoordinate>();
-             _mapCenter=new GeoCoordinate();
+         public MapViewModel(ILocationManager locationManager,ApplicationIdCredentialsProvider credentials){
+             _locationManager = locationManager;
+             _credentials = credentials;
+             _locationManager.OnNewPositionReceived += new EventHandler<NewLocationEventArgs>(_locationManager_OnNewPositionReceived);
+             _userPositions=new ObservableCollection<LocationDto>();
+             _mapCenter=new LocationDto();
+         }
+
+         void _locationManager_OnNewPositionReceived(object sender, NewLocationEventArgs e)
+         {
+             base.RaisePropertyChanged(()=>UserPositions);
          }
 
          public override void InitalizeData(){
-             GetCoordinatesFromDbAndConvertForMap();
-             
-             
+             GetLastPositionAndCenterMap();
          }
 
-         private void GetLastPositionAndCenterMap(IEnumerable<LocationDto> locations){
-             var lastPosition=locations.FirstOrDefault(x=>x.MeasurementDatetime==locations.Max(y=>y.MeasurementDatetime));
+         private void GetLastPositionAndCenterMap()
+         {
+             var lastPosition = UserPositions.FirstOrDefault(x => x.MeasurementDatetime == UserPositions.Max(y => y.MeasurementDatetime));
              if (lastPosition != null){
-                 MapCenter = new GeoCoordinate(lastPosition.MapPosition.Latitude, lastPosition.MapPosition.Longitude); 
+                 MapCenter = lastPosition;
              }
-             
          }
 
-         private void GetCoordinatesFromDbAndConvertForMap(){
-             var positionsFromDb = _locationRepository.GetAll().ToList();
-             GetLastPositionAndCenterMap(positionsFromDb);
-             foreach (var locationDto in positionsFromDb){
-                 UserPositions.Add(new GeoCoordinate(locationDto.MapPosition.Latitude, locationDto.MapPosition.Longitude));
-             }
+         private void ZoomSelectedPin(LocationDto obj){
+             MapCenter = obj;
+             ZoomLevel = 18;
          }
 
          public int ZoomLevel{
@@ -93,20 +102,33 @@ namespace LocationTestTask.UI.ViewModels
              }
          }
 
-         public ObservableCollection<GeoCoordinate> UserPositions{
-             get { return _userPositions; }
-             set{
-                 _userPositions = value;
-                 base.RaisePropertyChanged(()=>UserPositions);
+         public DelegateCommand<LocationDto> ZoomSelectedPinCommand
+         {
+             get
+             {
+                 if (_zoomSelectPinCommand == null)
+                 {
+                     _zoomSelectPinCommand = new DelegateCommand<LocationDto>(ZoomSelectedPin);
+                 }
+                 return _zoomSelectPinCommand;
              }
          }
 
-         public GeoCoordinate MapCenter{
+         public ObservableCollection<LocationDto> UserPositions{
+             get { return new ObservableCollection<LocationDto>(_locationManager.Locations); }
+           
+         }
+
+         public LocationDto MapCenter{
              get { return _mapCenter; }
              set{
                  _mapCenter = value;
                  base.RaisePropertyChanged(()=>MapCenter);
              }
+         }
+
+         public ApplicationIdCredentialsProvider Credentials{
+             get { return _credentials; }
          }
     }
 }

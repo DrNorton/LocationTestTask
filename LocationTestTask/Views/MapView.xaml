@@ -11,11 +11,13 @@
     xmlns:map="clr-namespace:Microsoft.Phone.Controls.Maps;assembly=Microsoft.Phone.Controls.Maps"
     xmlns:platform="clr-namespace:Microsoft.Phone.Controls.Maps.Platform;assembly=Microsoft.Phone.Controls.Maps"
     xmlns:controls="clr-namespace:Phone7.Fx.Controls;assembly=Phone7.Fx"
+    xmlns:triggers="clr-namespace:Phone7.Fx.Triggers;assembly=Phone7.Fx"
+    xmlns:converters="clr-namespace:LocationTestTask.UI.Converters"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
     shell:SystemTray.IsVisible="True">
     
     <i:Interaction.Behaviors>
@@ -23,12 +25,10 @@
     </i:Interaction.Behaviors>
     
     <phone:PhoneApplicationPage.Resources>
-            <ControlTemplate x:Key="PushpinControlTemplate1" TargetType="map:Pushpin">
-                <Grid Height="116" Width="155">
-                    <Ellipse Fill="#FFA3A3BE" Stroke="Black" Margin="0"/>
-                    <Image Source="{Binding PinSource}"/>
-                </Grid>
-            </ControlTemplate>
+        <ControlTemplate x:Key="PinTemplate" TargetType="map:Pushpin">
+            <Image Source="/Content/red-circle.png" Stretch="None" HorizontalAlignment="Left"/>
+        </ControlTemplate>
+        <converters:LocationDtoToGeoCoordinateConverter x:Key="LocationDtoToGeoCoordinateConverter"/>
     </phone:PhoneApplicationPage.Resources>
     
     <!--LayoutRoot is the root grid where all page content is placed-->
@@ -46,11 +46,17 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel"  Grid.Row="1" Margin="12,0,12,0">
-            <map:Map Center="{Binding MapCenter}" ZoomLevel="{Binding ZoomLevel,Mode=TwoWay}" x:Name="BingMap">
-                <map:MapItemsControl ItemsSource="{Binding UserPositions}">
+            <map:Map Culture="ru-RU"  CredentialsProvider="{Binding Credentials}" Center="{Binding MapCenter,Converter={StaticResource LocationDtoToGeoCoordinateConverter}}" ZoomLevel="{Binding ZoomLevel,Mode=TwoWay}" x:Name="BingMap" CopyrightVisibility="Collapsed">
+                <map:MapItemsControl  ItemsSource="{Binding UserPositions}">
                     <map:MapItemsControl.ItemTemplate>
                         <DataTemplate>
-                            <map:Pushpin Location="{Binding}"/>
+                            <map:Pushpin  Location="{Binding .,Converter={StaticResource LocationDtoToGeoCoordinateConverter}}"  Template="{StaticResource PinTemplate}" Margin="-16,0,0,-5" >
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="Tap">
+                                        <triggers:EventToCommand  Command="{Binding ElementName=ContentPanel,Path=DataContext.ZoomSelectedPinCommand}" CommandParameter="{Binding}" />
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                            </map:Pushpin>
                             
                         </DataTemplate>
                     </map:MapItemsControl.ItemTemplate>
@@ -59,8 +65,8 @@
         </Grid>
         
         <controls:BindableApplicationBar x:Name="AppBar" BarOpacity="1.0" >
-            <controls:BindableApplicationBarIconButton Command="{Binding ZoomInCommand}" IconUri="/icons/appbar.questionmark.rest.png" Text="+" />
-            <controls:BindableApplicationBarIconButton Command="{Binding ZoomOutCommand}" IconUri="/icons/appbar.questionmark.rest.png" Text="-" />
+            <controls:BindableApplicationBarIconButton Command="{Binding ZoomInCommand}" IconUri="/Content/appbar.add.rest.png" Text="приблизить" />
+            <controls:BindableApplicationBarIconButton Command="{Binding ZoomOutCommand}" IconUri="/Content/appbar.minus.rest.png" Text="отдалить" />
         </controls:BindableApplicationBar>
     </Grid>
  

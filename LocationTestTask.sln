@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationTestTask.UI", "LocationTestTask\LocationTestTask.UI.csproj", "{026D47D0-95D2-4720-8093-ADAC7B7E5DC5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationTestTask.DataLayer", "LocationTestTask.DataLayer\LocationTestTask.DataLayer.csproj", "{243320FF-2F4C-4806-8A41-F1820B384D26}"
@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "additional projects", "addi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phone7.Fx", "Phone7.Fx\Phone7.Fx.csproj", "{B24D96DD-A649-4E97-A9E7-68438C88232F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationTestTask.GpsPositionSaverAgent", "LocationTestTask.GpsPositionSaverAgent\LocationTestTask.GpsPositionSaverAgent.csproj", "{88C5044E-9D05-413E-B1B2-AD0BC3A12110}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationTestTask.Core", "LocationTestTask.Core\LocationTestTask.Core.csproj", "{1F3D7C6C-30EC-4EB5-8C9C-53E6678D0C88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +31,10 @@ Global
 		{B24D96DD-A649-4E97-A9E7-68438C88232F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B24D96DD-A649-4E97-A9E7-68438C88232F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B24D96DD-A649-4E97-A9E7-68438C88232F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{88C5044E-9D05-413E-B1B2-AD0BC3A12110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{88C5044E-9D05-413E-B1B2-AD0BC3A12110}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{88C5044E-9D05-413E-B1B2-AD0BC3A12110}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{88C5044E-9D05-413E-B1B2-AD0BC3A12110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F3D7C6C-30EC-4EB5-8C9C-53E6678D0C88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F3D7C6C-30EC-4EB5-8C9C-53E6678D0C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F3D7C6C-30EC-4EB5-8C9C-53E6678D0C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F3D7C6C-30EC-4EB5-8C9C-53E6678D0C88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
