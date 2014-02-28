@@ -16,11 +16,6 @@ namespace LocationTestTask.UI
     {
         private const string ConnectionString = "Data Source=isostore:/db.sdf";
 
-        public BootStrapper()
-        {
-           
-        }
-        
         protected override void Configure()
         {
             var db = new LocationContext(ConnectionString);
@@ -33,8 +28,6 @@ namespace LocationTestTask.UI
             Container.Current.RegisterInstance<ILocationContext>(context);
             Container.Current.RegisterInstance<ILocationRepository>(locationRepository);
             Container.Current.RegisterInstance<ILocationManager>(locationManager);
-           
-            
         }
 
         private ILocationContext CreateDataBaseIfNeeded(ILocationContext db)
